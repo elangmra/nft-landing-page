@@ -16,7 +16,7 @@
 <body class="bg-scroll bg-no-repeat bg-[#120227] font-['Poppins'] bg-[url('assets/background.png')]">
 
     <!-- Navbar -->
-    <nav class="flex flex-row max-w-6xl mx-auto justify-between mb-3 mt-6 items-center">
+    <nav class="flex flex-row max-w-6xl mx-auto justify-between mb-3 mt-6 items-center md:flex hidden">
         <svg width="155" height="20" viewBox="0 0 155 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M14.984 19H11.624L4.016 7.504V19H0.656V2.224H4.016L11.624 13.744V2.224H14.984V19ZM28.6484 2.248V4.96H21.6644V9.256H27.0164V11.92H21.6644V19H18.3044V2.248H28.6484ZM42.431 2.248V4.96H37.967V19H34.607V4.96H30.143V2.248H42.431Z"
@@ -51,26 +51,26 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero max-w-6xl mx-auto font-semibold mt-24">
-        <div class="flex flex-row">
-            <div class="flex flex-col w-[459px]">
-                <h1 class="text-5xl text-white leading-snug">
+    <section class="hero max-w-6xl mx-auto font-semibold mt-10 md:mt-24 py-12 px-5">
+        <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col md:w-1/2">
+                <h1 class="text-3xl md:text-5xl text-white leading-snug">
                     Unleash Your
-                    <br>
+                    <br class="md:block hidden">
                     Digital
-                    <br>
+                    <br class="md:block hidden">
                     Masterpiece
                 </h1>
-                <p class="text-white opacity-50 font-medium text-lg leading-tight mt-2">
-                    Discover the largest marketplace for digital <br>
+                <p class="text-white opacity-50 font-medium text-md leading-tight mt-2">
+                    Discover the largest marketplace for digital <br class="md:block hidden">
                     assets in the crypto world.
                 </p>
                 <button
-                    class="mt-6 w-fit bg-[#C93D8D] text-white text-xl text-semibold py-2 px-8 rounded-lg hover:bg-white hover:text-[#C93D8D]">
+                    class="w-full mt-6 md:w-fit bg-[#C93D8D] text-white text-xl text-semibold py-2 px-8 rounded-lg hover:bg-white hover:text-[#C93D8D]">
                     Explore
                 </button>
             </div>
-            <div class="flex flex-row items-center gap-x-5 max-w-[700px]">
+            <div class="flex flex-row items-center gap-x-5 max-w-1/2 md:flex hidden">
                 <div class="card relative top-[50px]">
                     <div class="badge-price absolute right-0 flex bg-[#120227] px-2 py-1 gap-x-1 rounded-md">
                         <svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,186 +115,181 @@
         </div>
     </section>
 
-    <!-- Carousel Image -->
-    <section class="carousel-image">
-
-    </section>
-
     <!-- Category -->
-    <section class="category mx-auto max-w-6xl mt-14">
-        <div class="flex flex-col gap-y-9">
-            <h1 class="text-white font-semibold text-4xl">
+    <section class="category mx-auto max-w-6xl mt-2 md:mt-14 px-5">
+        <div class="flex flex-col gap-y-5 md:gap-y-9">
+            <h1 class="text-white font-semibold md:text-4xl text-3xl">
                 Category
             </h1>
-            <div class="categories-image flex gap-x-6">
-                <div class="category-img max-h-[180px] relative">
-                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-lg rounded-lg py-1 px-2">
+            <div class="categories-image flex flex-row md:flex-nowrap flex-wrap gap-2 md:gap-x-6">
+                <div class="w-[calc(50%-0.5rem)] category-img max-h-[180px] relative">
+                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-sm md:text-lg rounded-lg py-1 px-2">
                         Arts
                     </span>
-                    <img src="assets/category-img-1.png" alt="">
+                    <img src="assets/category-img-1.png" alt="" class="w-full">
                 </div>
-                <div class="category-img max-h-[180px] relative">
-                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-lg rounded-lg py-1 px-2">
+                <div class="w-[calc(50%-0.5rem)] category-img max-h-[180px] relative">
+                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-sm md:text-lg rounded-lg py-1 px-2">
                         Photography
                     </span>
-                    <img src="assets/category-img-2.png" alt="">
+                    <img src="assets/category-img-2.png" alt="" class="w-full">
                 </div>
-                <div class="category-img max-h-[180px] relative">
-                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-lg rounded-lg py-1 px-2">
+                <div class="w-[calc(50%-0.5rem)] category-img max-h-[180px] relative">
+                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-sm md:text-lg rounded-lg py-1 px-2">
                         Music
                     </span>
-                    <img src="assets/category-img-3.png" alt="">
+                    <img src="assets/category-img-3.png" alt="" class="w-full">
                 </div>
-                <div class="category-img max-h-[180px] relative">
-                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-lg rounded-lg py-1 px-2">
+                <div class="w-[calc(50%-0.5rem)] category-img max-h-[180px] relative">
+                    <span class="absolute right-0 bg-[#120227] text-white font-semibold text-sm md:text-lg rounded-lg py-1 px-2">
                         Game
                     </span>
-                    <img src="assets/category-img-4.png" alt="">
+                    <img src="assets/category-img-4.png" alt="" class="w-full">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Popular Items -->
-    <section class="popular-items mx-auto max-w-6xl mt-20">
-        <div class="flex flex-col gap-y-9">
+    <section class="popular-items mx-auto max-w-6xl mt-14 md:mt-20 px-5">
+        <div class="flex flex-col gap-y-5 md:gap-y-9">
             <div class="flex justify-between items-center">
-                <h1 class="text-white font-semibold text-4xl">
+                <h1 class="text-white font-semibold text-3xl md:text-4xl">
                     Popular Items
                 </h1>
-                <a href="#" class="text-[#C93D8D] font-semibold text-xl">
-                    See All Items
+                <a href="#" class="text-[#C93D8D] font-semibold text-xl md:block hidden">
+                    See All Items 
                 </a>
             </div>
-            <div class="flex flex-row gap-x-6">
-                <div class="card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
+            <div class="flex flex-row gap-2 md:gap-x-6 md:flex-nowrap flex-wrap">
+                <div class="w-[calc(50%-0.5rem)] card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
                     <div class="card-items">
                         <img src="assets/popular-items-1.png" alt="">
                         <div class="flex flex-row mt-4 justify-between">
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">
+                                <p class="text-white/80 font-medium text-xs md:text-lg">
                                     Dimitri
                                 </p>
-                                <p class="mt-2 text-white text-semibold text-xl">
+                                <p class="mt-2 text-white text-semibold text-sm md:text-xl">
                                     Hand Of God
                                 </p>
                             </div>
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">Price</p>
+                                <p class="text-white/80 font-medium text-xs md:text-lg">Price</p>
                                 <div class="flex items-center gap-x-1 mt-2">
-                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7 0.75L0.75 11.25L7 15L13.25 11.25L7 0.75ZM0.75 12.5L7 21.25L13.25 12.5L7 16.25L0.75 12.5Z"
                                             fill="#C4C4C4" />
                                     </svg>
-                                    <p class="text-white text-semibold text-xl">
+                                    <p class="text-white text-semibold text-sm md:text-xl">
                                         0.12
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <button
-                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-xl text-semibold ">
+                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-sm md:text-xl text-semibold ">
                             Buy Now
                         </button>
                     </div>
                 </div>
-                <div class="card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
-                    <div class="card-items">
+                <div class="w-[calc(50%-0.5rem)] card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
+                    <div class="card-items ">
                         <img src="assets/popular-items-2.png" alt="">
                         <div class="flex flex-row mt-4 justify-between">
-                            <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">
+                            <div class="flex-col w-1/2">
+                                <p class="text-white/80 font-medium text-xs md:text-lg">
                                     Sakuya
                                 </p>
-                                <p class="mt-2 text-white text-semibold text-xl">
+                                <p class="mt-2 text-white text-semibold text-sm md:text-xl">
                                     Abstract Art
                                 </p>
                             </div>
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">Price</p>
+                                <p class="text-white/80 font-medium text-xs md:text-lg">Price</p>
                                 <div class="flex items-center gap-x-1 mt-2">
-                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7 0.75L0.75 11.25L7 15L13.25 11.25L7 0.75ZM0.75 12.5L7 21.25L13.25 12.5L7 16.25L0.75 12.5Z"
                                             fill="#C4C4C4" />
                                     </svg>
-                                    <p class="text-white text-semibold text-xl">
+                                    <p class="text-white text-semibold text-sm md:text-xl">
                                         0.1
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <button
-                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-xl text-semibold ">
+                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-sm md:text-xl text-semibold ">
                             Buy Now
                         </button>
                     </div>
                 </div>
-                <div class="card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
-                    <div class="card-items">
+                <div class="w-[calc(50%-0.5rem)] card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
+                    <div class="card-items ">
                         <img src="assets/popular-items-3.png" alt="">
                         <div class="flex flex-row mt-4 justify-between">
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">
+                                <p class="text-white/80 font-medium text-xs md:text-lg">
                                     Kurugashi
                                 </p>
-                                <p class="mt-2 text-white text-semibold text-xl">
+                                <p class="mt-2 text-white text-semibold text-sm md:text-xl">
                                     Lil Fox
                                 </p>
                             </div>
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">Price</p>
+                                <p class="text-white/80 font-medium text-xs md:text-lg">Price</p>
                                 <div class="flex items-center gap-x-1 mt-2">
-                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7 0.75L0.75 11.25L7 15L13.25 11.25L7 0.75ZM0.75 12.5L7 21.25L13.25 12.5L7 16.25L0.75 12.5Z"
                                             fill="#C4C4C4" />
                                     </svg>
-                                    <p class="text-white text-semibold text-xl">
+                                    <p class="text-white text-semibold text-sm md:text-xl">
                                         0.25
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <button
-                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-xl text-semibold ">
+                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-sm md:text-xl text-semibold ">
                             Buy Now
                         </button>
                     </div>
                 </div>
-                <div class="card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
-                    <div class="card-items">
+                <div class="w-[calc(50%-0.5rem)] card-wrapper max-h-[621px] bg-[#1F0443] p-6 rounded-xl">
+                    <div class="card-items ">
                         <img src="assets/popular-items-4.png" alt="">
                         <div class="flex flex-row mt-4 justify-between">
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">
-                                    Zuklov Skevi
+                                <p class="text-white/80 font-medium text-xs md:text-lg">
+                                    Zuklov
                                 </p>
-                                <p class="mt-2 text-white text-semibold text-xl">
+                                <p class="mt-2 text-white text-semibold text-sm md:text-xl">
                                     Le Face
                                 </p>
                             </div>
                             <div class="flex-col">
-                                <p class="text-white/80 font-medium text-lg">Price</p>
+                                <p class="text-white/80 font-medium text-xs md:text-lg">Price</p>
                                 <div class="flex items-center gap-x-1 mt-2">
-                                    <svg width="14" height="22" viewBox="0 0 14 22" fill="none"
+                                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M7 0.75L0.75 11.25L7 15L13.25 11.25L7 0.75ZM0.75 12.5L7 21.25L13.25 12.5L7 16.25L0.75 12.5Z"
                                             fill="#C4C4C4" />
                                     </svg>
-                                    <p class="text-white text-semibold text-xl">
+                                    <p class="text-white text-semibold text-sm md:text-xl">
                                         0.82
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <button
-                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-xl text-semibold ">
+                            class="w-full mt-10 py-2 rounded-lg bg-[#C93D8D] hover:bg-[#fff] text-white hover:text-[#C93D8D] text-sm md:text-xl text-semibold ">
                             Buy Now
                         </button>
                     </div>
@@ -304,13 +299,12 @@
     </section>
 
     <!-- Begin Section -->
-    <section
-        class="flex items-center text-center justify-center mt-20 bg-[url('assets/begin-journey.png')] bg-no-repeat h-80">
+    <section class="px-5 flex items-center text-center justify-center mt-20 bg-[url('assets/begin-journey.png')] bg-no-repeat h-80">
         <div>
-            <h1 class="text-white font-semibold text-5xl">
+            <h1 class="text-white font-semibold text-2xl md:text-5xl">
                 Begin Your Journey into NFTs!
             </h1>
-            <p class="mt-2 mb-6 text-white/50 font-medium text-xl">
+            <p class="mt-2 mb-6 text-white/50 font-medium text-sm md:text-xl">
                 Get your NFTs by purchasing our digital assets right here.
             </p>
             <a class="rounded-lg bg-[#C93D8D] text-white px-8 py-2 hover:bg-[#fff] hover:text-[#C93D8D]" href="">
@@ -320,14 +314,14 @@
     </section>
 
     <!-- Footer Section -->
-    <footer class="footer mx-auto max-w-6xl my-20">
-        <div class="flex flex-row ">
+    <footer class="px-5 footer mx-auto max-w-6xl my-20">
+        <div class="flex flex-col md:flex-row ">
             <div class="flex flex-row">
                 <h1 class="text-white font-semibold text-2xl"><span class="text-[#C93D8D]">NFT</span> Universe</h1>
             </div>
-            <div class="flex flex row ml-36 gap-x-[68px]">
-                <ul class="flex flex-col text-white/80 font-medium text-lg gap-y-5">
-                    <li class="text-[#C93D8D] font-semibold text-xl">
+            <div class="mt-8 md:mt-0 flex flex-row md:ml-36 gap-x-[68px] flex-wrap">
+                <ul class="w-1/5 md:w-fit  flex flex-col text-white/80 font-medium text-base gap-y-5">
+                    <li class="text-[#C93D8D] font-semibold text-lg">
                         Explore
                     </li>
                     <li>
@@ -351,8 +345,8 @@
                         </a>
                     </li>
                 </ul>                
-                <ul class="flex flex-col text-white/80 font-medium text-lg gap-y-5">
-                    <li class="text-[#C93D8D] font-semibold text-xl">
+                <ul class="w-1/5 md:w-fit  flex flex-col text-white/80 font-medium text-base gap-y-5">
+                    <li class="text-[#C93D8D] font-semibold text-lg">
                         Account
                     </li>
                     <li>
@@ -366,8 +360,8 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex flex-col text-white/80 font-medium text-lg gap-y-5">
-                    <li class="text-[#C93D8D] font-semibold text-xl">
+                <ul class="w-1/5 md:w-fit  flex flex-col text-white/80 font-medium text-base gap-y-5">
+                    <li class="text-[#C93D8D] font-semibold text-lg">
                         Stats
                     </li>
                     <li>
@@ -381,8 +375,8 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex flex-col text-white/80 font-medium text-lg gap-y-5">
-                    <li class="text-[#C93D8D] font-semibold text-xl">
+                <ul class="mt-6 md:mt-0 w-1/5 md:w-fit  flex flex-col text-white/80 font-medium text-base gap-y-5">
+                    <li class="text-[#C93D8D] font-semibold text-lg">
                         Company
                     </li>
                     <li>
@@ -396,8 +390,8 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex flex-col text-white/80 font-medium text-lg gap-y-5">
-                    <li class="text-[#C93D8D] font-semibold text-xl">
+                <ul class="mt-6 md:mt-0 w-1/5 md:w-fit  flex flex-col text-white/80 font-medium text-base gap-y-5">
+                    <li class="text-[#C93D8D] font-semibold text-lg">
                         Contact
                     </li>
                     <li>
